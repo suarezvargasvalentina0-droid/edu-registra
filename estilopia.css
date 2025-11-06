@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*
+{
+  margin:  35 px ;  
+}
+
+.nombre {
+    color:#ffffff;
+    text-align: center;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+}
+
+.sistema {
+   color:#000000;
+    text-align: left;
+font-size: 35px;
+text-align: center ;
+
+font-family: "Playfair Display", serif;
+}
+.cefa {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.cohete{
+  width:130px ;
+  height:130px;
+  object-fit: cover;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-left: 200px;
+  margin-right: 400px;
+  margin-top: 100px;
+}
+.contenedor2 {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  text-align: right;
+  margin-right: 100px;
+  margin-left: 200px;
+}
+
+
+.contenedorB {
+  color:#ffffff;
+  display: grid;
+  margin-top: 50px;
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 200px;
+
+}
+.contenedorC {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  text-align: right;
+  margin-right: 100px;
+  margin-left: 200px;
+}
+.contenedorI {
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+.contenedorR {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  text-align: right;
+  margin-right: 200px;
+  margin-left: 100px;
+  margin-top: 5%;
+}
+.titulo2{ 
+  margin-top: 2%;
+  margin-left: 80px;
+}
+.formulario {
+  display: grid;
+  margin-top: 50px;
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 200px;
+}
+
+
+.contenedorG {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  text-align: right;
+  margin-right: 200px;
+  margin-left: 100px;
+  margin-top: 2%;
+
+}
+.contenedorJ {
+  display: grid;
+  margin-top: 50px;
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 200px;
+  margin-top: 10% ;
+
+}
+.contenedorE{
+  color:#ffffff;
+  text-align: right;
+  margin-top: 3%;
+  margin-left: 10px;
+
+}
+.contenedorEX {
+  text-align: center;
+  margin-top: 3%;
+  margin-left: 10px;
+  height: 10px;
+}
+.contenedorUL {
+  margin-top: 6%;
+}
+
+.contenedorescudo{
+  text-align: center;
+  margin-top: 5%;
+  
+}
+.contenedorimg{
+  background-image: url(fondo.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 200px;
+}
+
+.contenedordoc{
+  top: 10%;
+}
+
+.contenedorinfo{
+  margin-right:8% ;
+
+}
+.contenedorexp{
+   color:#ffffff;
+    text-align: center;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+}
+
+
+.ultima-fondo {
+  /* background-image: url("../imagenes/fondo.jpeg"); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.068)), url('../IMAGENES/fondo.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+ .grados{
+   text-align: center;
+   font-size: 25px;
+ }
+ 
+ .grados-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 columnas iguales */
+  gap: 20px;
+}
+
+.grado-group {
+  display: flex;
+  flex-direction: column;
+  color:#ffffff
+}
+
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  select {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .info-colegio {
+    color:#ffffffff;
+    text-align: center;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.Creadoras {
+    color:#ffffffff;;
+    text-align: center;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.contenedor-pie {
+    color:#ffffffff;
+    text-align: center;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+.contenedordocu{
+   display: grid;
+  grid-template-columns: 6fr 2fr;
+  text-align: right;
+  margin-right: 100px;
+  margin-left: 200px;
+  color:#ffffff
+}
+    
+          input [type=number]::-webkit-outer-spin-button, input [type=number]::-webkit-inner-spin-button
+          {
+            -webkit-appearance: none;
+            margin: 0;
+            display: none !important;
+          }
+
+.info-colegio {
+  color:#ffffff
+}
+.color-label {
+  color: #ffffff;
+}
+.titulo2 h5 {
+  color: white; /* texto blanco */
+  font-family: 'Times New Roman', serif; /* misma fuente */
+  font-size: 22px; /* tamaño similar al de los otros títulos */
+  font-weight: bold; /* en negrita */
+  letter-spacing: 1px; /* separación entre letras */
+  text-align: center; /* centrado */
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>PERFIL INTEGRAL</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="estilopia.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: rgb(113, 172, 113);
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    th {
+      background: rgb(113, 172, 113);
+      color: white;
+    }
+
+    button {
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .btn-editar {
+      background: #007bff;
+      color: white;
+      padding: 4px 10px;
+    }
+
+    .btn-eliminar {
+      background: #b02a37;
+      color: white;
+      padding: 4px 10px;
+    }
+
+    .btn-editar:hover {
+      background: #0056b3;
+    }
+
+    .btn-eliminar:hover {
+      background: #8b1f2e;
+    }
+
+    h2 {
+      color: white;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .grado-group {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contenedorinfo">
+    <table style="width: 100%; border: none;">
+      <tr>
+        <td style="width: 20%;"><img src="./IMAGENES/cohete.png" style="width: 60%;"></td>
+        <td style="width: 90%; text-align: center;">
+          <div class="sistema"><b>PERFIL INTEGRAL</b></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="salir2 mb-3">
+    <button class="btn btn-Light"><a class="link-light" href="menu.html">SALIR</a></button>
+  </div>
+
+  
+  <!-- TODOS LOS GRADOS -->
+  <div class="grados-wrapper mb-5">
+    <!-- Grado 6 -->
+    <div class="grado-group">
+      <label for="grado6">Grado 6°:</label>
+      <select id="grado6" onchange="gradoSeleccionado(event)" class="form-select">
+        <option value="">Seleccione grupo...</option>
+        <option value="SEXTO UNO">GRUPO 1</option>
+        <option value="SEXTO DOS">GRUPO 2</option>
+        <option value="SEXTO TRES">GRUPO 3</option>
+        <option value="SEXTO CUATRO">GRUPO 4</option>
+        <option value="SEXTO CINCO">GRUPO 5</option>
+        <option value="SEXTO SEIS">GRUPO 6</option>
+        <option value="SEXTO SIETE">GRUPO 7</option>
+        <option value="SEXTO OCHO">GRUPO 8</option>
+       
+        
+      </select>
+    </div>
+
+    <!-- Grado 7 -->
+    <div class="grado-group">
+      <label for="grado7">Grado 7°:</label>
+      <select id="grado7" onchange="gradoSeleccionado(event)" class="form-select">
+        <option value="">Seleccione grupo...</option>
+        <option value="SÉPTIMO UNO">GRUPO 1</option>
+        <option value="SÉPTIMO DOS">GRUPO 2</option>
+        <option value="SÉPTIMO TRES">GRUPO 3</option>
+        <option value="SÉPTIMO CUATRO">GRUPO 4</option>
+        <option value="SÉPTIMO CINCO">GRUPO 5</option>
+        <option value="SÉPTIMO SEIS">GRUPO 6</option>
+        <option value="SÉPTIMO SIETE">GRUPO 7</option>
+        <option value="SÉPTIMO OCHO">GRUPO 8</option>
+      </select>
+    </div>
+
+    <!-- Grado 8 -->
+    <div class="grado-group">
+      <label for="grado8">Grado 8°:</label>
+      <select id="grado8" onchange="gradoSeleccionado(event)" class="form-select">
+        <option value="">Seleccione grupo...</option>
+        <option value="OCTAVO UNO">GRUPO 1</option>
+        <option value="OCTAVO DOS">GRUPO 2</option>
+        <option value="OCTAVO TRES">GRUPO 3</option>
+        <option value="OCTAVO CUATRO">GRUPO 4</option>
+        <option value="OCTAVO CINCO">GRUPO 5</option>
+        <option value="OCTAVO SEIS">GRUPO 6</option>
+        <option value="OCTAVO SIETE">GRUPO 7</option>
+        <option value="OCTAVO OCHO">GRUPO 8</option>
+        
+      </select>
+    </div>
+
+    <!-- Grado 9 -->
+    <div class="grado-group">
+      <label for="grado9">Grado 9°:</label>
+      <select id="grado9" onchange="gradoSeleccionado(event)" class="form-select">
+        <option value="">Seleccione grupo...</option>
+        <option value="NOVENO 1">GRUPO 1</option>
+        <option value="NOVENO 2">GRUPO 2</option>
+        <option value="NOVENO 3">GRUPO 3</option>
+        <option value="NOVENO 4">GRUPO 4</option>
+        <option value="NOVENO 5">GRUPO 5</option>
+        <option value="NOVENO 6">GRUPO 6</option>
+        <option value="NOVENO 7">GRUPO 7</option>
+        <option value="NOVENO 8">GRUPO 8</option>
+       
+      </select>
+    </div>
+
+    <!-- Grado 10 -->
+    <div class="grado-group">
+      <label for="grado10">Grado 10°:</label>
+      <select id="grado10" onchange="gradoSeleccionado(event)" class="form-select">
+        <option value="">Seleccione grupo...</option>
+        <option value="10 ALIMENTOS">ALIMENTOS</option>
+        <option value="10 ARTES ESECÉNICAS">ARTES ESECÉNICAS</option>
+        <option value="10 DISEÑO TEXTIL">DISEÑO TEXTIL</option>
+        <option value="10 MATEMÁTICAS">MATEMÁTICAS</option>
+        <option value="10 INGLÉS">INGLÉS</option>
+        <option value="10 BIOLOGÍA">BIOLOGÍAL</option>
+        <option value="10 CIENCIAS QUÍMICA 1">CIENCIAS QUÍMICA 1</option>
+        <option value="10 CIENCIAS QUÍMICA 1">CIENCIAS QUÍMICA 2</option>
+        <option value="10 INFORMÁTICA 1">INFORMÁTICA 1</option>
+        <option value="10 INFORMÁTICA 2">INFORMÁTICA 2</option>
+        <option value="10 INFORMÁTICA 3">INFORMÁTICA 3</option>
+         <option value="11 INFORMÁTICA 4">INFORMÁTICA 4</option>
+      </select>
+    </div>
+
+    <!-- Grado 11 -->
+    <div class="grado-group">
+      <label for="grado11">Grado 11°:</label>
+      <select id="grado11" onchange="gradoSeleccionado(event)" class="form-select">
+        <option value="">Seleccione grupo...</option>
+        <option value="11 ALIMENTOS">ALIMENTOS</option>
+        <option value="11 ARTES ESECÉNICAS">ARTES ESECÉNICAS</option>
+        <option value="11 DISEÑO TEXTIL">DISEÑO TEXTIL</option>
+        <option value="11 MATEMÁTICAS">MATEMÁTICAS</option>
+        <option value="11 INGLÉS">INGLÉS</option>
+        <option value="11 BIOLOGÍA">BIOLOGÍA</option>
+        <option value="11 CIENCIAS QUÍMICA 1">CIENCIAS QUÍMICA 1</option>
+        <option value="11 CIENCIAS QUÍMICA 2">CIENCIAS QUÍMICA 2</option>
+        <option value="11 INFORMÁTICA 1">INFORMÁTICA 1</option>
+        <option value="11 INFORMÁTICA 2">INFORMÁTICA 2</option>
+        <option value="11 INFORMÁTICA 3">INFORMÁTICA 3</option>
+         <option value="11 INFORMÁTICA 4">INFORMÁTICA 4</option>
+      </select>
+    </div>
+  </div>
+ <h2>Panel de Administración</h2>
+
+  <!-- TABLA -->
+  <section id="tabla">
+    <table id="tablaEstudiantes">
+      <thead>
+        <tr>
+          <th>NOMBRE</th>
+          <th>DOCUMENTO</th>
+          <th>CORREO</th>
+          <th>GRADO</th>
+          <th>CLAVE</th>
+          <th>ACCIONES</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- MODAL EDITAR -->
+  <div class="modal fade" id="editarModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="formEditar">
+          <div class="modal-header">
+            <h5 class="modal-title">Editar Estudiante</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="editarId">
+            <div class="mb-2">
+              <label>Nombre</label>
+              <input type="text" id="editarNombre" class="form-control" required>
+            </div>
+            <div class="mb-2">
+              <label>Documento</label>
+              <input type="number" id="editarDocumento" class="form-control" required>
+            </div>
+            <div class="mb-2">
+              <label>Correo</label>
+              <input type="email" id="editarCorreo" class="form-control" required>
+            </div>
+            <div class="mb-2">
+              <label>Grado</label>
+              <input type="text" id="editarGrado" class="form-control" required>
+            </div>
+            <div class="mb-2">
+              <label>Clave</label>
+              <input type="number" id="editarClave" class="form-control" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-success">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const API_URL = 'http://localhost:3000/api/estudiantes';
+    const tbody = document.querySelector("#tablaEstudiantes tbody");
+
+    // ✅ Cargar estudiantes por grado seleccionado
+    async function gradoSeleccionado(event) {
+      const grado = event.target.value;
+      if (!grado) return;
+
+      try {
+        const res = await fetch(`${API_URL}/grado/${grado}`);
+        const estudiantes = await res.json();
+
+        if (!Array.isArray(estudiantes)) {
+          alert("Error al cargar estudiantes");
+          return;
+        }
+
+        // Mostrar los estudiantes al final de la tabla (no borra los anteriores)
+        estudiantes.forEach(est => {
+          const fila = document.createElement("tr");
+          fila.innerHTML = `
+            <td>${est.nombre}</td>
+            <td>${est.documento}</td>
+            <td>${est.correo}</td>
+            <td>${est.grado}</td>
+            <td>${est.clave}</td>
+            <td>
+              <button class="btn-editar" onclick="abrirEditar(${est.id}, '${est.nombre}', '${est.documento}', '${est.correo}', '${est.grado}', '${est.clave}')">Editar</button>
+              <button class="btn-eliminar" onclick="eliminarEstudiante(${est.id}, this)">Eliminar</button>
+            </td>`;
+          tbody.appendChild(fila);
+        });
+      } catch (error) {
+        console.error("Error al obtener estudiantes:", error);
+        alert("No se pudieron cargar los estudiantes.");
+      }
+    }
+
+    // ✅ Abrir modal para editar
+    function abrirEditar(id, nombre, documento, correo, grado, clave) {
+      document.getElementById("editarId").value = id;
+      document.getElementById("editarNombre").value = nombre;
+      document.getElementById("editarDocumento").value = documento;
+      document.getElementById("editarCorreo").value = correo;
+      document.getElementById("editarGrado").value = grado;
+      document.getElementById("editarClave").value = clave;
+      new bootstrap.Modal(document.getElementById("editarModal")).show();
+    }
+
+    // ✅ Guardar cambios
+    document.getElementById("formEditar").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const id = document.getElementById("editarId").value;
+      const data = {
+        nombre: document.getElementById("editarNombre").value,
+        documento: parseInt(document.getElementById("editarDocumento").value),
+        correo: document.getElementById("editarCorreo").value,
+        grado: document.getElementById("editarGrado").value,
+        clave: parseInt(document.getElementById("editarClave").value)
+      };
+
+      try {
+        const res = await fetch(`${API_URL}/${id}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        if (!res.ok) throw new Error("Error al actualizar");
+        alert("✅ Estudiante actualizado");
+        location.reload();
+      } catch (error) {
+        alert("❌ " + error.message);
+      }
+    });
+
+    // ✅ Eliminar estudiante
+    async function eliminarEstudiante(id, btn) {
+      if (!confirm("¿Seguro que deseas eliminar este estudiante?")) return;
+
+      try {
+        const res = await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
+        if (!res.ok) throw new Error("Error al eliminar");
+        btn.closest("tr").remove();
+        alert("🗑️ Estudiante eliminado correctamente");
+      } catch (error) {
+        alert("❌ " + error.message);
+      }
+    }
+
+    
+    const admin = sessionStorage.getItem('usuario');
+    if (!admin) {
+      alert('Pagina para administradores');
+      window.location.href='index.html'
+    }
+  
+  </script>
+</body>
+</html>
