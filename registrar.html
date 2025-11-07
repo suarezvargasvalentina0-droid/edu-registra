@@ -164,7 +164,7 @@
         }
 
         try {
-          const respuesta = await fetch("http://localhost:3000/api/estudiantes", {
+          const respuesta = await fetch("https://eduregistra.onrender.com/api/estudiantes", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nombre, documento, correo, grado, clave }),
