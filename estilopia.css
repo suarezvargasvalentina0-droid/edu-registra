@@ -12,12 +12,17 @@
 }
 
 .sistema {
-   color:#000000;
+   color:#f2f0f0;
     text-align: left;
 font-size: 35px;
 text-align: center ;
 
 font-family: "Playfair Display", serif;
+}
+
+.sistema2 {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
 }
 .cefa {
   width: 300px;
